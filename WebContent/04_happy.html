@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!-- 모바일 시 뷰포트를 사용하면 꽉찬 화면으로 만들어줌 -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- text를 html로 인식시키겠다. (기본값) -->
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="java, database"/>
+<!-- empty elements로 만들 때는 마지막 /넣어주는게 좋습니다 -->
+<!-- <meta http-equiv="refresh" content="3; url=http://www.naver.com" /> -->
+<title>메타 데이터 속성</title>
+<style type="text/css">
+	/*id:고유한 화면(document)의 값: 단 한개 존재
+	  name: 여러 개 존재 가능 WAS에서 String 배열로 받음 (유일하게 서버사이드로)
+	  tag: 여러 개 가능, 화면에서만 작동되며 서버사이드로 가져갈 수 없음 */
+	/* id, tag는 화면에서 구분하기 위함이며, 서버사이드에서 가져갈 수 없음*/
+    li { /*div의 tomato를 오버라이딩 해서 yellow로 바뀜*/
+		background-color: yellow;
+	}
+    div { /*li 태그랑 div태그 도 주고 싶다면 li, div  */
+		background-color: tomato;
+	}
+	/*id 표시할 땐 #을 사용*/
+	#a{ /*id가 우선이기 때문에 바뀜*/
+		background-color: lime;
+	}
+	/*클래스는 .을 사용해서 표시*/
+	.b{ 
+		background-color: skyblue;
+	}
+	/*tag < name(class) < id*/
+
+</style>
+</head>
+<body>
+	<h2>블럭(영역)요소</h2>
+<!-- inline 최우선 -->
+	<div id="a" class="b" style="background-color: gray;" > <!-- 블럭(영역) -->
+		<p>p는 블럭도 되지만 블럭요소</p>
+		<ul>
+			<li>블럭요소 li1 </li>
+			<li>블럭요소 li2</li>
+		</ul> 
+	</div>
+	<!-- 한 줄을 다 차지하면 블럭, 자신의 값만 영역을 먹으면 블럭요소라고 생각하면 됨. -->
+	<div>
+		<span>spanA</span><span>spanB</span>
+<!-- 		오늘은 사람이 없는 것처럼 느껴집니다<p> 영역이라 line space 안먹음 그래서 단독으론 잘 안씀-->
+		<p></p>
+		괜찮아요~~ ★<br>
+		오늘은 오늘일 뿐이에요
+		
+	</div> 
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>메인 페이지</title>
+<style type="text/css">
+body {
+	text-align: center;
+	background-color: #ffab57;
+}
+
+#logins {
+	width: 20%;
+	padding: 15px;
+	border: 1px solid red;
+}
+
+#logins input{
+/* 	 style="width: 200px; padding: 10px" */
+}
+
+#leftSidebar{
+	width: 20%;
+	border: 1px solid black;
+}
+
+#menuBar ul{
+	border: 1px solid black;
+	padding: 20px;
+	list-style-type: none;	
+}
+
+#menuBar ul li{
+	display: inline;
+	margin: 0px auto;
+}
+#medias{
+	width: 600px;
+	border: 1px spotted black;
+	padding: 10px;
+	float: right;
+}
+#footer{
+	font-size: 70%;
+	text-align: center;
+	line-height: normal;
+	margin-top: 50px;
+	color: tomato;
+	clear: right;		
+}
+
+#allContents{
+	width: 1000px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin: 0px auto;
+	border: 2px solid black;
+}
+
+</style>
+</head>
+<body>
+	<header>
+		<a href="#"> <img alt="Coco_Logo" src="./images/coco_logo.png"
+			title="Coco_Logo">
+		</a>
+	</header>
+	
+	<div id="menuBar">
+		<ul>
+			<li>영화 코코</li>
+			<li>등장인물</li>
+			<li>예고편</li>
+			<li>사운드 트랙</li>
+			<li>게시판</li>
+		</ul>
+	</div>
+<div id="allContents">
+	<div id="medias">
+		<!-- 	<p><img alt="코코" src="./images/bg_coco.jpg">	</p> -->
+		<iframe width="560" height="315" title="coco_video" style="border:none;" 
+			src="https://www.youtube.com/embed/zNCz4mQzfEI" 
+			allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+		</iframe>
+	</div>
+	
+	<div id="logins">
+		<a href="./LogIn.html"> <input type="submit" alt="Log In" title="로그인" value="Log In">
+		</a> <br> 
+		<span> 
+			<a href="#" style="text-align: left; font-size: small;">아이디|비밀번호 찾기</a>
+		</span> 
+		<span>&nbsp;&nbsp; 
+			<a href="./SignIn.html" style="text-align: right; font-size: small;">회원가입</a>
+		</span>
+	</div>
+		
+
+	
+	<div id="leftSidebar">
+		<p>딱히 무엇을 넣을 공간은 아닌데.. 저작권은 pixar와 나무위키에 있음을 밝힙니당</p>
+	</div>
+
+	<div>
+		<p>코코 웹사이트에 오신 것을 환영합니다. 어떤 사이트를 만들어야 하는지 감도 안오고 진짜로 디자인에 소질도 없어서
+			이것저것 마구 붙여넣고 있는데 ㅠㅠ어떻게 만들어야 할까요</p>
+	</div>
+
+</div>	<!-- AllContainer -->
+
+	
+	<div id="footer">
+		<p>
+			&copy; 2019, Happy Corporation<br> 이 사이트의 사진파일 동영상등의 저작권은 pixar가
+			갖고 있습니다<br> https://www.pixar.com/feature-films/coco/
+		</p>
+	</div>
+
+</body>
+</html>

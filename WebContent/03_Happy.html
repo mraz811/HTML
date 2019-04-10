@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>일기장</title>
+	<style type="text/css">
+	img {
+		width: 150px;
+	
+	}
+	li{
+		cursor: pointer;
+	}
+	
+	h2{
+		background-color: #CEF6CE;
+	}
+	/*point는 id고 h2는 태그라서 아이디가 먼저 먹힘 */
+	h2#point{
+		background-color: pink;
+		cursor: pointer;
+	}
+	
+	</style>
+</head>
+<body>
+	<h1>
+		<a target="_blank" href="http://192.168.4.254:8091/20190213_HTML/03_Happy.html" >쌤꺼
+		</a>
+	</h1>
+	<h1>전쌤과 같이하는 신나는 웹 개발 일지</h1>
+	<div><strong>아무글자</strong></div>
+	<p>
+		Happy Class의 교육일지
+	</p>
+	
+	<h2><time>2019년 12월 13일</time></h2>
+	<img alt="포켓몬" src="./images/pokemon.jpg">
+	<p>
+		오늘은 이상해씨와 파이리를 만나서 같이 놀았다. <br>
+		이상해씨의 이름을 들은 지나가던 행인1이 우리이름은 막부르면서
+		왜 이상해만 씨를 붙여서 부르냐고 했다. <br>
+		파이리씨, 이상해씨, 꼬부기씨라고 해야한다나 
+	</p>
+	<!-- blockquote는 들여쓰기가 됩니다!! ebook에 많이 사용합니다. -->
+	<!-- p도 블록이고 blockquote도 블록이므로 따로 사용해야 한다.-->
+	<blockquote>
+<!-- 		<pre> -->
+		안녕, 피카츄씨~ <br> <!-- 문장의 흐름을 끊음: 라인브레이크 -->
+		한 줄씩 내려서 사용하고 싶은데 	어떻게 하면 좋을까요 <br>
+		pre 태그를 사용하면 보여지는 그대로 화면으로 넘깁니다. <br> <!-- empty elements -->
+<!-- 		</pre> -->
+	</blockquote>
+	
+	<h2>2019년 1월 13일</h2>
+	<img alt="달" src="./images/moon.JPG">
+	<p>
+		내가 직접 찍은 달 사진이다. 물론 뻥이다.
+		포토샵을 잘한 것 같다. 내가 했냐고? 아니다 구글에서 퍼왔다.
+		구글엔 모든 것이 다 있는 것 같다. 진숙이는 콧물이 난다고 한다.
+		진숙이가 말하길 <q>아 콧물나</q>
+	</p>
+	<!-- q요소는 inline요소: 어떠한 block의 요소가 됨  (em, span...)
+	blockquote는 블록요소: 고유한 영역을 가지고 있음 -> 블럭 내에 블럭은 사용하지 못함 h1, p.. 
+	-->
+	
+	<h2 id="point">2018년 12월 13일</h2>
+	<img alt="before_sunrise" src="./images/before_sunrise.jpg">
+	<p>
+	<!-- 리스트 요소 - 블록요소라서 p내로 못함 
+		ul(unordered 순서없는 리스트) 
+		ol(ordered 순서가 되어있는 리스트)_ 	li(리스트 항목 item) 태그 -->
+		여행 중 기차에서 모르는 미국인이 말을 걸었다.
+		재밌게 이야기 하다가 이제 내린다고 하길래 아쉬웠다. 
+		비엔나에서 같이 내리자고 해서 따라내렸다.
+		근사한 하루를 보내고 6개월 뒤에 이 장소에서 만나자고 하고 헤어졌다.
+	</p>
+	
+	<ol>
+		<li>&lt;JAVA&gt;</li>
+		<li>Data&nbsp;&nbsp;&nbsp;Base</li>
+		<li>HTML</li>
+		<li>JavaScript</li>		
+	</ol>
+
+	<h2></h2>
+	<img alt="" src="">
+	<p></p>
+	
+	
+</body>
+</html>

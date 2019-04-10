@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"> <!--예전에 한국어가 외국에서 안되서 사용했었지만 euc-kr -->
+<title>CSS 작성법</title>
+	<style type="text/css">
+	@font
+		p{
+			color: white;
+		}
+		p.#roadmap{ /*최우선 순위가 됩니다.*/
+			color: black;
+		}
+	</style>
+<!-- /*style 시트만 linked 태그를 사용하고 href속성을 사용합니다.*/ -->
+ <link type="text/css" rel="stylesheet" href="./css/05Happy.css" />
+ </head>
+<body>
+<div style="width: 900px; margin: auto;">
+	<h1>Happy Class에 오신 것을 환영합니다.</h1>
+	
+	<p>
+		<img alt="chocolate" src="./images/choco.png" title="chocolate">
+	</p>
+	<p>
+		낮에 방문해 주시면
+		<a href="./view/drink.html">음료</a>와 대화 
+		그리고 게임 <em>Dead by Daylight</em>가 제공되고
+		무선인터넷을 무한으로 제공해드리고 있습니다.
+	</p>
+	
+	<h2 class="a">찾아 오시는 길</h2>
+	<p id='roadmap'> <!-- '' 이던 ""이던 닫혀만 있으면 됩니다 나중에 JSON 때 ""이 인식이 안될 수도 -->
+		저희 학원은 역삼역 3번 앞에 있습니다.
+		자세한 위치는 <a href="http://koreaisacademy.com/academy/location.asp">상세약도</a>를 참조하세요 
+	</p>
+	
+	<!-- id는 1개밖에 없지만 클래스는 여러개 가능 -->
+	<div id="main" class="a b c">
+		 오늘 날씨도 추워요요오오오우어어어어어어
+	</div>
+	
+</div>
+</body>
+</html>

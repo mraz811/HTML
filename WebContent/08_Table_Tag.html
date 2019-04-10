@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>테이블 만들기</title>
+	<style type="text/css">
+	
+	table{
+		width: 600px;
+		border: 1px solid red;
+		text-align: center;
+		margin: 20px;
+		/*테이블 안의 ??뭐라??!? 붕괴시켜?*/
+		border-collapse: collapse;
+	}
+	
+	tr{
+	}
+	
+	td, th{
+		border: 1px solid blue;
+		padding: 10px;
+		/*td에 margin주어도 아무런 의미 없다.. 자기 자신이 아니라 내 위에 주어야*/
+	}
+	
+	</style>
+</head>
+<body>
+	<h1>테이블 만들기</h1>
+
+	<h2>기본 테이블</h2>
+	<!-- border='1'이면 표시하겠다. 0이면 표시하지 않겠다. -->
+	<table>
+		<tr>
+			<td>1</td>
+			<td>2</td>		
+			<td>3</td>
+			<td>4</td>		
+		</tr>
+		<tr>
+			<td>A</td>
+			<td>B</td>		
+			<td>C</td>
+			<td>D</td>		
+		</tr>
+	
+	
+	</table>
+	<hr/> <!-- 한줄 -->
+	
+	<h2>역삼역 밥집</h2>
+	<table>
+		<caption>만솔 브론즈</caption>
+		<thead>
+			<tr>
+				<th>번호</th> <!-- 헤드라인표시 -->
+				<th>음식점명</th>
+				<th>메뉴</th>
+				<th>평점</th>
+			</tr>
+		</thead>
+		
+		<tbody>
+			<tr>
+				<td>1</td><td>부어치킨</td>
+				<td>한식뷔페</td><td>★★★☆☆</td>
+			</tr>
+		</tbody>
+		
+		<tfoot>
+			<tr>
+				<td>&nbsp;</td><td>&nbsp;</td>
+				<td>&nbsp;</td><td>&nbsp;</td>
+			</tr>
+		</tfoot>
+
+	<!-- 표 안에 표 넣을 때. <tbody>를 <tfoot> 뒤에 넣어도 자동적으로 푸터가 뒤로 -->
+	</table>
+	
+	<hr/>
+	<h2>셀 병합하기</h2>	
+	<table>
+		<tr>
+			<td rowspan="2">1</td>
+			<td colspan="3">2</td>		
+<!-- 			<td>3</td> -->
+<!-- 			<td>4</td>		 -->
+		</tr>
+		<tr>
+<!-- 			<td>a</td> -->
+			<td>b</td>		
+			<td>c</td>
+			<td>d</td>		
+		</tr>
+	</table>
+	
+	<hr/>
+<!-- 	<h2>진숙이 테이블</h2> -->
+<!-- 	<table> -->
+<!-- 		<tr></tr> -->
+	
+<!-- 	</table> -->
+	
+</body>
+</html>

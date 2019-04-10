@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+*{
+	margin: 0px; padding: 0px; border: 0px;
+}
+
+header{
+	text-align: center;
+}
+
+body {
+/*  	width:1000px;  */
+	text-align: center;
+	margin: 0 auto; /*젤로*/
+	background-color: #ffab57;
+	
+}
+
+div {
+	text-align: center;
+	margin: 1.0em;
+/* 	border: 1px solid black; */
+}
+
+h2{
+	margin-top: 30px;
+	
+}
+
+input {
+	border: 1px solid black;
+	width: 300px;
+	margin: 10px;
+	padding: 15px;
+	cursor: pointer;
+}
+
+a:link {
+	color: #424242;
+}
+
+a:visited {
+	color: #424242;
+}
+
+#footer {
+	font-size: 70%;
+	text-align: center;
+	line-height: normal;
+	margin-top: 50px;
+	color: tomato;
+}

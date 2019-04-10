@@ -1,0 +1,39 @@
+@charset "UTF-8";
+@import url(//fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+@font-face{
+	font-family: 'Jeju Gothic';
+	src: url(//fonts.gstatic.com/ea/jejugothic/v3/JejuGothic-Regular.ttf) format('truetype');	
+}
+
+p {
+	font-family: 'Jeju Gothic';
+	color: maroon;
+}
+
+h1, h2 {
+	font-family: 'Nanum Pen Script', monospace;
+	color: gray;
+	border-bottom: 2px solid orange;
+}
+
+h1 {
+	border-bottom: 2px solid black;
+}
+
+#main{
+	font-size: 20px;
+	font-style: oblique;
+}
+
+.a{ 
+	background-color: tomato;
+}
+
+.b{
+	border-bottom: 4px solid #ffff80;
+}
+
+.c{
+	color: white;
+	font-weight: bold;
+}
